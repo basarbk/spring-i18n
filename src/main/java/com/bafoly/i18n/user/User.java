@@ -18,7 +18,7 @@ public class User {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private long id;
 
-  @NotNull
+  @NotNull(message = "{com.bafoly.constraints.NotNull.message}")
   @Size(min = 3, max=10)
   private String username;
   

@@ -13,7 +13,7 @@ import javax.validation.Payload;
 @Target(ElementType.FIELD)
 public @interface UniqueEmail {
 
-  String message() default "This email is in use";
+  String message() default "{com.bafoly.constraints.UniqueEmail.message}";
 
 	Class<?>[] groups() default { };
 
